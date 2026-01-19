@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Checkout | Order Summary</title>
+    <link rel="stylesheet" href="../page/css/ordersummary.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div class="bakery-card">
+    <div class="bakery-header">
+        <h2>Fresh from the Oven</h2>
+        <p>Complete your order for delivery or pickup</p>
+    </div>
+
+    <div class="content">
+        <h3>Your Selection</h3>
+        <div class="item-box">
+            <div class="item-row">
+                <span class="item-name">Chocolate</span>
+                <span class="item-price">50</span>
+            </div>
+            <div class="item-qty">Quantity: 1</div>
+            
+            <div class="item-row" style="margin-top: 15px;">
+                <span class="item-name">Brownies (Box of 4)</span>
+                <span class="item-price">1000</span>
+            </div>
+            <div class="item-qty">Quantity: 2</div>
+        </div>
+
+        <h3>Delivery Preference</h3>
+        <div class="delivery-grid">
+            <label class="delivery-card">
+                <input type="radio" name="d-type" checked>
+                <strong> Home Delivery</strong>
+                <small>50.00</small>
+            </label>
+            <label class="delivery-card">
+                <input type="radio" name="d-type">
+                <strong> Store Pickup</strong>
+                <small>Free</small>
+            </label>
+        </div>
+
+        <h3>Select Date & Time</h3>
+        <div class="schedule-box">
+            <div class="input-group">
+                <label>Preferred Date</label>
+                <input type="date" value="2024-05-20">
+            </div>
+            <div class="input-group">
+                <label>Preferred Time</label>
+                <input type="time" value="09:00">
+            </div>
+        </div>
+
+        <div class="summary-totals">
+            <div class="total-row">
+                <span>Subtotal</span>
+                <span>50.00</span>
+            </div>
+            <div class="total-row">
+                <span>Delivery Fee</span>
+                <span>1000.00</span>
+            </div>
+            <div class="total-row final-price">
+                <span>Total Amount</span>
+                <span>1050.00</span>
+            </div>
+        </div>
+
+        <a href="confirmed.html"><button type="button" class="order-btn">Confirm My Order</button></a>
+        <a href="#" class="back-link">← Add more treats to cart</a>
+    </div>
+</div>
+
+</body>
+</html>

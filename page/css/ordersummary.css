@@ -1,0 +1,198 @@
+:root {
+            --primary-color: #d2691e; /* Chocolate/Cinnamon Brown */
+            --secondary-color: #fdf5e6; /* Old Lace / Flour White */
+            --text-dark: #3e2723;
+            --text-light: #8d6e63;
+        }
+
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', 'Georgia', serif;
+        }
+
+        body {
+            background-color: #fff9f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .bakery-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 480px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(210, 105, 30, 0.15);
+            border: 1px solid #eee;
+            overflow: hidden;
+        }
+
+        .bakery-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .bakery-header h2 {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
+        }
+
+        .bakery-header p {
+            margin: 5px 0 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 25px;
+        }
+
+        h3 {
+            font-size: 17px;
+            color: var(--text-dark);
+            margin: 20px 0 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        h3::before {
+            content: "🥐";
+            margin-right: 8px;
+        }
+
+        /* Item List */
+        .item-box {
+            background: var(--secondary-color);
+            padding: 15px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .item-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            color: var(--text-dark);
+        }
+
+        .item-qty {
+            font-size: 13px;
+            color: var(--text-light);
+        }
+
+        /* Delivery Method Selection */
+        .delivery-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .delivery-card {
+            border: 2px solid #f0f0f0;
+            border-radius: 12px;
+            padding: 12px;
+            text-align: center;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .delivery-card input {
+            display: none;
+        }
+
+        .delivery-card:has(input:checked) {
+            border-color: var(--primary-color);
+            background-color: #fffaf5;
+        }
+
+        .delivery-card strong {
+            display: block;
+            color: var(--text-dark);
+            font-size: 14px;
+        }
+
+        /* Date & Time Picker */
+        .schedule-box {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+
+        .input-group {
+            flex: 1;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 12px;
+            font-weight: bold;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        /* Pricing */
+        .summary-totals {
+            border-top: 2px dashed #eee;
+            padding-top: 15px;
+            margin-bottom: 25px;
+        }
+
+        .total-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            color: var(--text-light);
+        }
+
+        .final-price {
+            font-size: 22px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 5px;
+        }
+
+        /* Buttons */
+        .order-btn {
+            width: 100%;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(210, 105, 30, 0.3);
+        }
+
+        .order-btn:hover {
+            background-color: #b35919;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 14px;
+        }

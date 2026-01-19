@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about_us</title>
+    <link rel="stylesheet" href="../page/css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff7f7;
+  color: #333;
+  padding: 0;
+  line-height: 1.8;
+
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff3f3;
+  padding: 10px 40px;
+  border-bottom: 1px solid #ddd;
+  flex-wrap: wrap;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  object-fit: contain;
+}
+
+.brand-name {
+  color: #e63946;
+  font-size: 22px;
+  margin: 0;
+  font-weight: 700;
+}
+
+
+.nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+.nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: 500;
+    }
+
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+.nav-links {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.menu-icon {
+    display: block;
+}
+}
+
+@media (max-width: 480px) {
+  .brand-name {
+    font-size: 18px;
+  }
+
+.btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+  
+}
+
+
+.about-container {
+      max-width: 800px;
+      margin: 60px auto;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 40px;
+}
+
+h1 {
+      text-align: center;
+      color: #d97706;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+}
+
+p {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+}
+
+strong {
+      color: #b45309;
+}
+
+em {
+      display: block;
+      text-align: center;
+      color: #d97706;
+      font-style: italic;
+      margin-top: 20px;
+      font-weight: bold;
+}
+
+.footer {
+  background-color: #fff6f2;
+  color: #5a372e;
+  padding: 50px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+  border-top: 2px solid #f3b47b;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.footer-about,
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-about h2 {
+  color: #e67b3f;
+  margin-bottom: 10px;
+}
+
+
+.footer-contact h3 {
+  color: #e67b3f;
+  margin-bottom: 12px;
+}
+
+
+
+.footer-contact a {
+  color: #5a372e;
+  text-decoration: none;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons img {
+  width: 25px;
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #f3b47b;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .social-icons img {
+    margin: 0 8px;
+  }
+}
+    </style>
+</head>
+<body>
+    <header>
+    <div class="logo-container">
+      <a href="../page/home.html"><img src="../assets/Screenshot 2025-11-13 163521.png" alt="Doughlightful Logo" class="logo" /></a>
+      <h1 class="brand-name">DOUGHLIGHTFUL</h1>
+    </div>
+
+     <nav>
+      <ul class="nav-links">
+        <li><a href="../page/home.html">HOME</a></li>
+        <li><a href="../page/product.html">PRODUCTS</a></li>
+        <li><a href="../page/recipe.html">RECIPES</a></li>
+        <li><a href="../page/about.html">ABOUT US</a></li>
+        <a href="orders.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href=""><i class="fa-solid fa-user"></i></a>
+      </ul>
+    </nav>
+
+    
+  </header>
+
+    <div class="about-container">
+    <h1>About Doughlightful</h1>
+
+    <p>Welcome to <strong>Doughlightful</strong> — your one-stop destination for everything baked and beautiful!</p>
+
+    <p>At Doughlightful, talented <strong>bakers showcase and sell</strong> their freshly made products directly to customers who love quality and creativity. From cookies and cakes to pastries and breads, every item is made with care and passion.</p>
+
+    <p>But Doughlightful is more than just a marketplace — it's also a space for <strong>inspiration and learning</strong>. Customers can explore recipes, get baking ideas, and even try their hand at creating their own delightful dishes.</p>
+
+    <p>Our goal is simple: to connect passionate bakers with dessert lovers and make every day a little sweeter.</p>
+
+    <em> Doughlightful - Where Baking Meets Happiness!</em>
+  </div>
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h2>Doughlightful</h2>
+      <p>Bringing homebakers and dessert lovers together — handmade treats made with love and sweetness!</p>
+    </div>
+
+    
+
+    <div class="footer-contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:hello@doughlightful.com">doughlightful2026@gmail.com</a></p>
+      <p>Phone: +91 98765 43210</p>
+      <div class="social-icons">
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGFKGkE0n-MIDhhhVId5GpfwSz5wcPvTJ_Zw&s" alt="Facebook"></a>
+        <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh9ViF0gZEibWmkpgu83gP87hefJ1j2tDZA&s" alt="Instagram"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png" alt="Twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 Doughlightful. All Rights Reserved.</p>
+  </div>
+</footer>
+    </div>
+</body>
+</html>

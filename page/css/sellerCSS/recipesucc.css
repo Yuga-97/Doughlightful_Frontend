@@ -1,0 +1,53 @@
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(58, 173, 58); /* Your brand color */
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    /* Success Box */
+    .success-box {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      animation: popIn 0.8s ease;
+      max-width: 400px;
+      width: 90%;
+    }
+
+    .success-box h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+    }
+
+    .success-box p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .success-box a {
+      display: inline-block;
+      text-decoration: none;
+      color: #ff7a59;
+      background: white;
+      padding: 12px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .success-box a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Animation */
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
